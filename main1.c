@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void swapnum(int i, int j) {
+  int temp = i;
+  i = j;
+  j = temp;
+}
+
+int main(void) {
+  int a = 10;
+  int b = 20;
+  const int x = 3;
+  const int y[3] = {1 ,2, 3};
+  swapnum(a, b);
+  printf("A is %d and B is %d\n", a, b);
+  return 0;
+}
